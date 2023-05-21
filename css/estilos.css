@@ -1,0 +1,139 @@
+:root{
+    --colorRojo: rgb(198, 0, 0);
+    --colorAzul: rgb(16, 20, 57);
+}
+
+@font-face {
+    font-family: FuenteTitulos;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+}
+
+h1, h2, h3 {
+    font-family: FuenteTitulos;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/**********ENCABEZADO**********/
+
+header nav ul li a{
+    background-color: var(--colorAzul);
+    color: white;
+    transition: 1s;
+}
+
+header nav ul li a:hover{
+    background-color: var(--colorRojo);
+    color: white;
+}
+
+/**********IMAGEN ESTADIO**********/
+
+main section:nth-of-type(1){
+    height: 300px;
+    background-image: url("../img/estadio.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+
+    border-top: 6px solid var(--colorRojo);
+    border-bottom: 6px solid var(--colorAzul);
+}
+
+/**********NOTICIAS**********/
+
+span {
+    color: var(--colorRojo);
+}
+
+main section:nth-of-type(2) article a{
+    background-color: var(--colorRojo);
+    color: white;
+    transition: 1s;
+}
+
+main section:nth-of-type(2) article a:hover {
+    background-color: var(--colorAzul);
+    color: white;
+}
+
+/**********IMAGEN FANS**********/
+
+main section:nth-of-type(3){
+    height: 200px;
+    background-image: url("../img/fans.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
+    border-top: 6px solid var(--colorRojo);
+    border-bottom: 6px solid var(--colorAzul);
+}
+
+/**********JUGADORES**********/
+
+main section:nth-of-type(4) article a {
+    background-color: var(--colorRojo);
+    color: white;
+}
+
+main section:nth-of-type(4) article a:hover{
+    background-color: var(--colorAzul);
+    transition: 1s;
+}
+
+h3 {
+    color: grey;
+}
+
+/**********CAMISETA**********/
+
+main section:nth-of-type(5) {
+    border-top: 6px solid var(--colorAzul);
+    border-bottom: 6px solid var(--colorRojo);
+}
+
+/**********FORMULARIO**********/
+
+main section:nth-of-type(6) form input[type="text"] {
+    border: 2px solid var(--colorRojo);
+}
+
+main section:nth-of-type(6) form input[type="submit"] {
+    background-color: var(--colorRojo);
+    color: white;
+    border: none;
+    transition: 1s;
+}
+
+main section:nth-of-type(6) form input[type="submit"]:hover{
+    background-color: var(--colorAzul);
+    color: white;
+}
+
+/**********PIE DE PÁGINA**********/
+
+footer{
+    background-color: black;
+    color: white;
+}
